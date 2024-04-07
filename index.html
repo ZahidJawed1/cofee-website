@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Doze Cafe</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand"href="index.html"><img src="data:image/jpeg;base64,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"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="coffees.html">offers</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                     <div class="login_bt">
+                        <ul>
+                           <li><a href="#"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
+                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                  </form>
+               </div>
+            </nav>
+         </div>
+         <!-- banner section start --> 
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div id="banner_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="banner_img"><img src="resturent_website-removebg-preview.png"></div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="banner_taital_main">
+                                 <h1 class="banner_taital">Cooking</h1>
+                                 <h5 class="tasty_text">Tasty Of Bezeyne</h5>
+                                 <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
+                                 <div class="btn_main">
+                                    <div class="about_bt"><a href="#">About Us</a></div>
+                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="banner_img"><img src="resturent_website-removebg-preview.png"></div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="banner_taital_main">
+                                 <h1 class="banner_taital">coffee</h1>
+                                 <h5 class="tasty_text">Tasty Of DozeCafe</h5>
+                                 <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
+                                 <div class="btn_main">
+                                    <div class="about_bt"><a href="#">About Us</a></div>
+                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="banner_img"><img src="resturent_website-removebg-preview.png"></div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="banner_taital_main">
+                                 <h1 class="banner_taital">coffee</h1>
+                                 <h5 class="tasty_text">Tasty Of DozeCafe</h5>
+                                 <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
+                                 <div class="btn_main">
+                                    <div class="about_bt"><a href="#">About Us</a></div>
+                                    <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- coffee section start -->
+      <div class="coffee_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <h1 class="coffee_taital">OUR Offers</h1>
+               <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+            </div>
+         </div>
+         <div class="coffee_section_2">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-1.png"></div>
+                              <h3 class="types_text">TYPES OF COFFEE</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-2.png"></div>
+                              <h3 class="types_text">BEAN VARIETIES</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-3.png"></div>
+                              <h3 class="types_text">COFFEE & PASTRY</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-4.png"></div>
+                              <h3 class="types_text">COFFEE TO GO</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-1.png"></div>
+                              <h3 class="types_text">TYPES OF COFFEE</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-2.png"></div>
+                              <h3 class="types_text">BEAN VARIETIES</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-3.png"></div>
+                              <h3 class="types_text">COFFEE & PASTRY</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-4.png"></div>
+                              <h3 class="types_text">COFFEE TO GO</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container-fluid">
+                        <div class="row">
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-1.png"></div>
+                              <h3 class="types_text">TYPES OF COFFEE</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-2.png"></div>
+                              <h3 class="types_text">BEAN VARIETIES</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-3.png"></div>
+                              <h3 class="types_text">COFFEE & PASTRY</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                           <div class="col-lg-3 col-md-6">
+                              <div class="coffee_img"><img src="images/img-4.png"></div>
+                              <h3 class="types_text">COFFEE TO GO</h3>
+                              <p class="looking_text">looking at its layout. The point of</p>
+                              <div class="read_bt"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- coffee section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="about_taital">About </h1>
+                  <div class="bulit_icon"><img src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=600"></div>
+               </div>
+            </div>
+            <div class="about_section_2 layout_padding">
+               <div class="image_iman"><img src="images/about-img.png" class="about_img"></div>
+               <div class="about_taital_box">
+                  <h1 class="about_taital_1">Coffee distribution '</h1>
+                  <p class=" about_text">has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editorhas a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editor</p>
+                  <div class="readmore_btn"><a href="#">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- client section start -->
+      <!-- <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="about_taital">What syas customers</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+            <div class="client_section_2">
+               <div class="client_taital_main">
+                  <div class="client_left">
+                     <div class="client_img"><img src="images/client-img1.png"></div>
+                  </div>
+                  <div class="client_right">
+                     <h3 class="moark_text">Joy Moark</h3>
+                     <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
+                  </div>
+               </div>
+               <div class="client_taital_main">
+                  <div class="client_left">
+                     <div class="client_img"><img src="images/client-img2.png"></div>
+                  </div>
+                  <div class="client_right">
+                     <h3 class="moark_text">Mihacal</h3>
+                     <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
+                  </div>
+               </div>
+               <div class="client_taital_main">
+                  <div class="client_left">
+                     <div class="client_img"><img src="images/client-img3.png"></div>
+                  </div>
+                  <div class="client_right">
+                     <h3 class="moark_text">Uliya den</h3>
+                     <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- client section end -->
+      <!-- blog section start -->
+      <!-- <div class="blog_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="about_taital">Our Blog</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+            <div class="blog_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="images/blog-img1.png"></div>
+                        <h4 class="date_text">05 April</h4>
+                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
+                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="blog_box">
+                        <div class="blog_img"><img src="images/blog-img2.png"></div>
+                        <h4 class="date_text">05 April</h4>
+                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
+                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                     </div>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- blog section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="contact_taital">Yours Feedback</h1>
+                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
+               </div>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="contact_section_2">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="mail_section_1">
+                        <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
+                        <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
+                        <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                        <div class="send_bt"><a href="#">SEND</a></div>
+                     </div>
+                  </div>
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="250" height="500" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h1 class="address_text">Address</h1>
+                  <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">03492042251</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">zahisjawed77@gmail.com</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="form-group">
+                     <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
+                     <div class="subscribe_bt"><a href="#"><img src="htps://media.istockphoto.com/id/1180926063/photo/small-business-owner-at-entrance-looking-at-camera.jpg?b=1&s=612x612&w=0&k=20&c=Bg2udt_QkGsde4CrMeIi5uRVhAhYG2odrEPhWdu4akQ="></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <!-- <div class="copyright_section">
+         <div class="container">
+            <div class="row">
+               <!-- <div class="col-lg-6 col-sm-12">
+                  <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
+               </div> -->
+               <!-- <div class="col-lg-6 col-sm-12">
+                  <div class="footer_social_icon">
+                     <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+      </div> -->
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
